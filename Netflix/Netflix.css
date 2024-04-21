@@ -1,0 +1,94 @@
+
+/*to do: 
+ top 10, 
+ scroll better
+ dropdown
+ font
+ video at beginning 
+*/
+head{
+  overflow-y: auto;
+}
+body{
+  background-color:  black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top:20px; 
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+.title{
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: sticky;
+  opacity:  1;
+
+/* Add new font*/
+}
+.right{
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: sticky;
+  opacity:  0.8;
+}
+
+li a:hover:not(.active) {
+  opacity:  0.5;
+}
+
+.active {
+  opacity: 1;
+}
+
+.dropbtn {
+  /*dropdown navbar*/
+}
+
+.navbar{
+  display: block;
+  background-color: white;
+  text-align: right;
+  text-decoration: none;
+  height: 50px;
+  padding:0px 8px;
+}
+.row{
+  display: flex;
+  flex-direction:  row;
+  justify-content: space-around; 
+  column-gap: 20px;
+  overflow-x: auto;
+}
+div img{   
+  flex-shrink: 0.6;
+
+}
+.page{
+  display: grid;
+  grid-auto-rows:  auto;
+  row-gap: 10px;
+}
+h2{
+  color: white;
+  grid-column:1/13 ;
+  row-gap: 10px;
+}
+
